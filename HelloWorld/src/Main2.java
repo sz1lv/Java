@@ -31,6 +31,13 @@ public class Main2 {
 
 		System.out.println(x1);
 		System.out.println(x2);
+		
+		if(szam2 == 0 ) {
+			System.out.println("Nem másodfokú egyenlet.");
+		} else if (diszkriminans < 0) {
+			System.out.println("Az egyenlet nem megoldható.");
+		} else
+			System.out.println("Másodfokú egyenlet.");
 
 	}
 }
