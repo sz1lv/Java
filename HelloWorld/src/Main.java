@@ -54,7 +54,8 @@ public class Main {
 		System.out.println("Összeg: " + osszeg);
 		System.out.println("Különbség: " + kulonbseg);
 		System.out.println("Szorzat: " + szorzat);
-		System.out.println("Hányados: " + hanyados);
+		System.out.println("Hányados: " + hanyados); //commit test
+		System.out.println();
 
 	}
 
