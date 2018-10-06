@@ -43,13 +43,13 @@ public class Main {
 		System.out.println("Felszín= " + felszin);*/
 		
 		//kalkulátor
-		double elso = Integer.parseInt(args[0]);
-		double masodik = Integer.parseInt(args[1]);
+		int elso = Integer.parseInt(args[0]);
+		int masodik = Integer.parseInt(args[1]);
 		
-		double osszeg = elso + masodik;
-		double kulonbseg = elso - masodik;
-		double szorzat = elso * masodik;
-		double hanyados = elso / masodik;
+		int osszeg = elso + masodik;
+		int kulonbseg = elso - masodik;
+		int szorzat = elso * masodik;
+		double hanyados = (double) elso / masodik;
 		
 		System.out.println("Összeg: " + osszeg);
 		System.out.println("Különbség: " + kulonbseg);
