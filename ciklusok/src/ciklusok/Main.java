@@ -47,8 +47,39 @@ public class Main {
                     System.out.printf("%d %d ", i, n/i); 
             } 
         } 
+		//VAGY
+		if (args.length == 1) {
+			int szam2 = Integer.parseInt(args[0]);
+			int oszto = 0;
+			
+			System.out.println(szam2 + " osztói: ");
+			for (int i = 1; i < args.length; i++) {
+				if(szam2 % i == 0) {
+					System.out.println(i + " ");
+					oszto++;
+				}
+			}
+			if (oszto == 2) {
+				System.out.println("A szám prímszám.");
+			} else {
+				System.out.println("A szám !prímszám.");
+			}
+		}
 		
 		//5. feladat
+		if(args.length == 2) {
+			String szo = args[0];
+			int szam3 = Integer.parseInt(args[1]);
+			
+			for (int i = 0; i < szam3; i++) {
+				for (int j = 0; j < i; j++) {
+					System.out.println(" ");
+				}
+				System.out.println(szo);
+			}
+		} else {
+			System.err.println("Két paramétert várok.");
+		}
 		
 		
 		
