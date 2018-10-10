@@ -84,7 +84,14 @@ public class Main {
 		
 		
 		//6. feladat
-		
+		if(args.length == 1) {
+			int szam4 = Integer.parseInt(args[0]);
+			int osztosum = 0;
+			
+			for (int i = 1; i < args.length; i++) {
+				
+			}
+		}
 		
 				/*int iosszeg = i + i;
 				if(iosszeg == num) {
