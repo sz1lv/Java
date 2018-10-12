@@ -83,6 +83,32 @@ public class Main3 {
 		
 		//4. feladat
 		
+//		try {
+//			System.out.println("1. szám: ");
+//			int szam1 = beolvas.nextInt();
+//			System.out.println("2. szám: ");
+//			int szam2 = beolvas.nextInt();
+//			System.out.println("3. szám: ");
+//			int szam3 = beolvas.nextInt();
+//			System.out.println("4. szám: ");
+//			int szam4 = beolvas.nextInt();
+//			System.out.println("5. szám: ");
+//			int szam5 = beolvas.nextInt();
+//			
+//			if (szam3 == szam1 + szam2 && szam4 == szam2 + szam3 && szam5 == szam3 + szam4) {
+//				System.out.println("Fibonacci sorozat!");
+//			} else {
+//				System.out.println("Nem Fibonacci sorozat!");
+//			}
+//			
+//		} catch (InputMismatchException e) {
+//			System.out.println("Nem számot adtál meg!");
+//		} catch (Exception e) {
+//			System.err.println("Hiba történt a programban.");
+//		}
+		
+		//5. feladat
+		
 		try {
 			System.out.println("1. szám: ");
 			int szam1 = beolvas.nextInt();
@@ -95,11 +121,14 @@ public class Main3 {
 			System.out.println("5. szám: ");
 			int szam5 = beolvas.nextInt();
 			
-			if (szam3 == szam1 + szam2 && szam4 == szam2 + szam3 && szam5 == szam3 + szam4) {
-				System.out.println("Fibonacci sorozat!");
+			double hanyados = (double) szam2 / szam1;
+			
+			if (szam3 / szam2 == hanyados && szam4 / szam3 == hanyados && szam5 / szam4 == hanyados) {
+				System.out.println("Mértani sorozat");
 			} else {
-				System.out.println("Nem Fibonacci sorozat!");
+				System.out.println("Nem mértani sorozat!");
 			}
+			
 			
 		} catch (InputMismatchException e) {
 			System.out.println("Nem számot adtál meg!");
