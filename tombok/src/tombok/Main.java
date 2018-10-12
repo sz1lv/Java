@@ -28,24 +28,71 @@ public class Main {
 //		}
 		
 		//2. feladat
+//		try {
+//			System.out.println("Adja meg a tömb hosszát: ");
+//			int db = beolvas.nextInt();
+//			float[] szamok = new float[db];
+//			float sum = 0;
+//			
+//			for (int i = 0; i < szamok.length; i++) {
+//				System.out.println((i+1) + ") Adj egy számot: ");
+//				szamok[i] = beolvas.nextFloat();
+//				sum += szamok[i];
+//			}
+//			
+//			//Tömb kiírása
+//			System.out.println("A számok, amit bekértünk: ");
+//			for (int i = 0; i < szamok.length; i++) {
+//				System.out.print(szamok[i] + ", ");
+//			}
+//			System.out.println("Számok összege: " + sum);
+//			
+//		} catch (InputMismatchException e) {
+//			System.out.println("Nem számot adtál meg!");
+//		} catch (Exception e) {
+//			System.err.println("Hiba történt a programban.");
+//		}
+		
+		//3. feladat
+//		try {
+//		System.out.println("Adja meg a tömb hosszát: ");
+//		int db = beolvas.nextInt();
+//		float[] szamok = new float[db];
+//		float sum = 0;
+//			System.out.println("Kérek egy számot: ");
+//		int szam = beolvas.nextInt();
+//			
+//			for (int i = 0; i < szamok.length; i++) {
+//				System.out.println((i+1) + ") Adj egy számot: ");
+//				szamok[i] = beolvas.nextInt();
+//				sum += szamok[i];
+//				if (szamok[i] % 2 == 0) {
+//					paros++;
+//				}
+//			}
+//			//Tömb kiírása
+//			System.out.println("Számok : ");
+//			System.out.println("A számok, amit bekértünk: ");
+//			for (int i = 0; i < szamok.length; i++) {
+//				System.out.print(szamok[i] + ", ");
+//			}
+//			System.out.println("Átlag: "+ (double) sum / szamok.length);
+//			System.out.println("Párosok száma: "+ paros);
+//			
+//		} catch (InputMismatchException e) {
+//			System.out.println("Nem számot adtál meg!");
+//		} catch (Exception e) {
+//			System.err.println("Hiba történt a programban.");
+//		}
+		
+		//4. feladat
+		
 		try {
-			System.out.println("Adja meg a tömb hosszát: ");
-			int db = beolvas.nextInt();
-			float[] szamok = new float[db];
-			float sum = 0;
+			String[] hetNapjai = {"hétfő","kedd","szerda","csütörtök","péntek","szombat","vasárnap"};
 			
-			for (int i = 0; i < szamok.length; i++) {
-				System.out.println((i+1) + ") Adj egy számot: ");
-				szamok[i] = beolvas.nextFloat();
-				sum += szamok[i];
-			}
-			
-			//Tömb kiírása
-			System.out.println("A számok, amit bekértünk: ");
-			for (int i = 0; i < szamok.length; i++) {
-				System.out.print(szamok[i] + ", ");
-			}
-			System.out.println("Számok összege: " + sum);
+			System.out.println("Kérek egy számot: ");
+			int index = beolvas.nextInt();
+			System.out.println(hetNapjai[index-1]);
 			
 		} catch (InputMismatchException e) {
 			System.out.println("Nem számot adtál meg!");
