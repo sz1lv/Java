@@ -15,6 +15,8 @@ public class Main {
 		} catch (ArithmeticException e) {
 			System.err.println("\nNullával osztottál!");
 			System.out.println("\n" + e);
+		} finally {
+			System.out.println("Sok a hibád!");
 		}
 
 	}
