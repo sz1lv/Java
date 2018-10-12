@@ -28,7 +28,7 @@ public class Main2 {
 				System.out.println("Kérek egy karaktert: ");
 				char karakter = beolvas.next().charAt(0);
 				System.out.println("A karakter: ");
-				System.out.println((int) karakter);
+				System.out.println((int) karakter); //int, ha számként akarjuk visszakapni
 			} catch (InputMismatchException e) {
 				System.out.println(e);
 			}
